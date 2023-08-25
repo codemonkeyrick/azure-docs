@@ -24,7 +24,7 @@ To enable Azure AD authentication, complete the following steps:
 1. Create two custom roles to:
     * Let the configuration API get access to customer's RBAC information
     * Grant permissions to read self-hosted gateway configuration
-1. Grant RBAC access to the API Management instance's managed identity 
+1. Grant RBAC access to the API Management instance's system assigned managed identity 
 1. Create an Azure AD app and grant it access to read the gateway configuration
 1. Deploy the gateway with new configuration options
 
@@ -32,7 +32,7 @@ To enable Azure AD authentication, complete the following steps:
 
 * An API Management instance in the Developer or Premium service tier. If needed, complete the following quickstart: [Create an Azure API Management instance](get-started-create-service-instance.md).
 * Provision a [gateway resource](api-management-howto-provision-self-hosted-gateway.md) on the instance.
-* Enable a [managed identity](api-management-howto-use-managed-service-identity.md) on the instance.
+* Enable a system assigned [managed identity](api-management-howto-use-managed-service-identity.md) on the instance.
 * Self-hosted gateway container image version 2.2 or later
 
 ## Create custom roles
